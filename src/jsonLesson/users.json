@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Musobek",
+        "age": 22,
+        "isStudent": true,
+        "country": "Uzbekistan",
+        "phone": "+998(99)966-1999",
+        "photo": "../src/jsonLesson/images/musobek.jpg"
+    }, 
+    {
+        "name": "Murodbek",
+        "age": 23,
+        "isStudent": true,
+        "country": "Uzbekistan",
+        "phone": "+998(99)966-9980",
+        "photo": "../src/jsonLesson/images/murod.jpeg"
+    },
+    {
+        "name": "Muhammad",
+        "age": 23,
+        "isStudent": false,
+        "country": "Uzbekistan",
+        "phone": "+998(91)912-2856",
+        "photo": "../src/jsonLesson/images/Muhammad.jpeg"
+    }
+]

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import About from './About';
+import Blog from './Blog';
+import Nav from './Nav';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Backend from './APITutorial/Backend';
+import SassTutorial from './sassTutorial/SassTutorial';
+import MyApp from './components/MyApp';
+import Lesson1 from './stateTutorial/Lesson1';
+import jsonApp from './jsonLesson/jsonApp';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Nav />
+            <Switch>
+                <Route path="/blog" component={Blog} />
+                <Route path="/about" component={About} />
+                <Route path="/sass" component={SassTutorial} />
+                <Route path="/alerts" component={MyApp} />
+                <Route path="/backend" component={Backend} />
+                <Route path="/counter" component={Lesson1} />
+                <Route path="/json" component={jsonApp} />
+            </Switch>
+
+        </BrowserRouter>
+
+    );
 }
 
 export default App;

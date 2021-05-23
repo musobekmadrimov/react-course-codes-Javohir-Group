@@ -1,0 +1,57 @@
+.box {
+          background-color: green;
+          width: 300px;
+          height: 300px;
+          margin: 15% auto;
+          transition: all 0.4s linear;
+          cursor: pointer;
+          position: relative;
+          animation: myAnimation 5s linear 2s infinite;
+
+          h1 {
+                    color: #fff;
+                    text-align: center;
+          }
+
+          p {
+                    color: #fff;
+                    text-align: center;
+
+                    &:nth-child(3) {
+                              color: red;
+                              font-size: 30px;
+                    }
+          }
+
+          &:hover {
+                    background-color: red;
+          }
+}
+
+@keyframes myAnimation {
+          0% {
+                    background-color: red;
+                    left: 0px;
+                    top: 0px;
+          }
+          25% {
+                    background-color: yellow;
+                    left: 50px;
+                    top: 0px;
+          }
+          50% {
+                    background-color: blue;
+                    left: 50px;
+                    top: 50px;
+          }
+          75% {
+                    background-color: green;
+                    left: 0px;
+                    top: 50px;
+          }
+          100% {
+                    background-color: red;
+                    left: 0px;
+                    top: 0px;
+          }
+}
