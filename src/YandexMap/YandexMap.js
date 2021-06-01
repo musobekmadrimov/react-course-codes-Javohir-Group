@@ -1,5 +1,5 @@
 import React from 'react'
-import { YMaps, Map, Placemark, FullscreenControl, GeolocationControl } from 'react-yandex-maps';
+import { YMaps, Map, Placemark, FullscreenControl, GeolocationControl, TrafficControl, TypeSelector } from 'react-yandex-maps';
 import './yandexStyles.css';
 
 export default function YandexMap() {
@@ -21,6 +21,11 @@ export default function YandexMap() {
                     float: 'right'
                 }}
                 />
+                <TrafficControl options={{
+                    float: 'right'
+                }}
+                />
+                 <TypeSelector options={{ float: 'right' }} />
             </Map>
         </YMaps>
 
