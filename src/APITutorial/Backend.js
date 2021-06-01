@@ -29,7 +29,6 @@ export default class Backend extends Component {
                 .then((response) => {
                     const images = response.data;
                     this.setState({ images: images })
-                    console.log(images)
                 })
         ])
 
