@@ -18,6 +18,7 @@ export default function Nav() {
                     <li><Link to="/charts">Charts</Link></li>
                     <li><Link to="/hooks">Hooks</Link></li>
                     <li><Link to="/yandexmap">YandexMap</Link></li>
+                    <li><Link to="/useEffect">UseEffect</Link></li>
                 </ul>
             </nav>
         </div>

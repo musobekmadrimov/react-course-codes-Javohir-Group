@@ -11,6 +11,7 @@ import jsonApp from './jsonLesson/jsonApp';
 import chartsComp from './chartsLib/chartsComp';
 import Oddiy from './hooksTutorial/Oddiy';
 import YandexMap from './YandexMap/YandexMap';
+import Oddiy2 from './hooksTutorial/Oddiy2';
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/charts" component={chartsComp} />
                 <Route path="/hooks" component={Oddiy} />
                 <Route path="/yandexmap" component={YandexMap} />
+                <Route path="/useEffect" component={Oddiy2} />
             </Switch>
 
         </BrowserRouter>
