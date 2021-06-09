@@ -12,7 +12,7 @@ export default function Oddiy2() {
     fetch(`https://jsonplaceholder.typicode.com/${infosType}`)
       .then((response) => response.json())
       .then((json) => console.log(json));
-  }, []);
+  });
 
   return (
     <div>
